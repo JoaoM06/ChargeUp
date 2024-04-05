@@ -11,7 +11,7 @@
 }
 
 .imageContainer{
-    background-image: linear-gradient(to left, #00000070, #00000070), url(/imgs/background-raio-verde.webp);
+    background-image: linear-gradient(to left, #00000070, #00000070), url(/chargeup/imgs/background-raio-verde.webp);
     background-position: bottom;
     background-size: cover;
 }
