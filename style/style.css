@@ -69,10 +69,23 @@ header a{
     box-shadow: 3px 3px 40px #ffdd028a;
 }
 
+@keyframes fadeInRight {
+    from{right: 120vw;}
+
+    to{right: 0}
+}
+
+@keyframes fadeInLeft {
+    from{left: 120vw;}
+
+    to{left: 0}
+}
+
 main{
     display: flex;
     align-items: center;
     height: 85vh;
+    scrollbar-width: none;
 }
 
 .mainContent{
@@ -87,12 +100,23 @@ main h1{
     font-family: "Poppins", sans-serif;
     font-size: 3rem;
     font-weight: 800;
+    animation: fadeInRight;
+    animation-duration: 1s;
+    position: relative;
+    right: 120vw;
+    animation-fill-mode: forwards;
 }
 
 main h2{
     color: rgb(172, 172, 172);
     font-family: "Roboto", sans-serif;
     font-size: 1.5rem;
+    animation: fadeInRight;
+    animation-duration: 1s;
+    position: relative;
+    right: 120vw;
+    animation-fill-mode: forwards;
+    animation-delay: 100ms;
 }
 
 .mainContent a{
@@ -109,6 +133,12 @@ main h2{
     cursor: pointer;
     transition: .5s;
     width: fit-content;
+    animation: fadeInRight;
+    animation-duration: 1s;
+    position: relative;
+    right: 120vw;
+    animation-fill-mode: forwards;
+    animation-delay: 200ms;
 }
 
 .sobreContainer{    
@@ -201,6 +231,7 @@ main h2{
     align-items: center;
     justify-content: left;
     width: 100%;
+    
 }
 
 .meta2Container{
