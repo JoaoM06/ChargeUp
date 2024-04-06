@@ -11,7 +11,7 @@
 }
 
 .imageContainer{
-    background-image: linear-gradient(to left, #00000070, #00000070), url(/chargeup/imgs/background-raio-verde.webp);
+    background-image: linear-gradient(to left, #00000070, #00000070), url(/imgs/background-raio-verde.webp);
     background-position: bottom;
     background-size: cover;
 }
@@ -81,6 +81,12 @@ header a{
     to{left: 0}
 }
 
+@keyframes easeAnim {
+    from{opacity: 0%;}
+
+    to{opacity: 100%;}
+}
+
 main{
     display: flex;
     align-items: center;
@@ -146,12 +152,36 @@ main h2{
     justify-content: space-evenly;
     align-items: center;
     margin: 30px 120px;
+    overflow: hidden;
 }
 
 .sobreContent{
     width: 50%;
     margin-right: 30px;
 }
+
+.showLeft{
+    animation: fadeInRight;
+    animation-duration: 1.5s;
+    position: relative;
+    right: 120vw;
+    animation-fill-mode: forwards;
+    animation-delay: 100ms;
+}
+
+.showRight{
+    animation: fadeInLeft;
+    animation-duration: 1.5s;
+    position: relative;
+    left: 120vw;
+    animation-fill-mode: forwards;
+    animation-delay: 100ms;
+}
+
+.showEase{
+    animation: easeAnim 2s;
+}
+
 
 .sobreContent h2{
     color: black;
@@ -207,7 +237,7 @@ main h2{
     width: fit-content;
 }
 
-.metasContainer img{
+.metasImgs{
     width: 150px;
 }
 
@@ -220,65 +250,31 @@ main h2{
     width: fit-content;
 }
 
-.meta1Container{
-    margin-top: 60px;
-    margin-right: 20%;
-    width: 60%;
-}
-
-.meta1{
+.metaLeftContainer{
     display: flex;
-    align-items: center;
-    justify-content: left;
-    width: 100%;
-    
-}
-
-.meta2Container{
+    justify-content: space-evenly;
     margin-top: 60px;
-    margin-left: 20%;
-    width: 60%;
 }
 
-.meta2{
+.metaInfo{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.metaTitle{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.metaImg img{
+    width: 35vw;
+}
+
+.metaRightContainer{
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
-    justify-content: right;
-    width: 100%;
-}
-
-.meta2Container p{
-    text-align: right;
-}
-
-.meta3Container{
+    justify-content: space-evenly;
     margin-top: 60px;
-    margin-right: 20%;
-    width: 60%;
-}
-
-.meta3{
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    width: 100%;
-}
-
-.meta4Container{
-    margin-top: 60px;
-    margin-left: 20%;
-    width: 60%;
-}
-
-.meta4{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: right;
-    width: 100%;
-}
-
-.meta4Container p{
-    text-align: right;
 }

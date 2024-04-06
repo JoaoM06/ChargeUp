@@ -19,3 +19,53 @@ document.addEventListener("scroll", ()=>{
         header.className = "header"
     }
 })
+
+//Animação
+const sobreContent = document.querySelector(".sobreContent")
+const metaLeftContainer = document.querySelectorAll(".metaLeftContainer")
+const metaRightContainer = document.querySelectorAll(".metaRightContainer")
+sobreContent.classList.add("hiddenLeft")
+metaLeftContainer.forEach((el)=>{
+    el.classList.add("hiddenLeft")
+})
+metaRightContainer.forEach((el)=>{
+    el.classList.add("hiddenRight")
+})
+
+
+const observerLeft = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        console.log(entry)
+        if(entry.isIntersecting){
+            entry.target.classList.add("showLeft")
+        }
+    })
+})
+
+const observerRight = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        console.log(entry)
+        if(entry.isIntersecting){
+            entry.target.classList.add("showRight")
+        }
+    })
+})
+
+const observerEase = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        console.log(entry)
+        if(entry.isIntersecting){
+            entry.target.classList.add("showEase")
+        }
+    })
+})
+
+
+
+const hiddenElementsLeft = document.querySelectorAll(".hiddenLeft")
+const hiddenElementsRight = document.querySelectorAll(".hiddenRight")
+const hiddenElementsEase = document.querySelectorAll(".hiddenEase")
+
+hiddenElementsLeft.forEach((el)=> observerLeft.observe(el))
+hiddenElementsRight.forEach((el)=> observerRight.observe(el))
+hiddenElementsEase.forEach((el)=> observerEase.observe(el))
