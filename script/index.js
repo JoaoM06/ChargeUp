@@ -35,7 +35,6 @@ metaRightContainer.forEach((el)=>{
 
 const observerLeft = new IntersectionObserver((entries)=>{
     entries.forEach((entry)=>{
-        console.log(entry)
         if(entry.isIntersecting){
             entry.target.classList.add("showLeft")
         }
@@ -44,7 +43,6 @@ const observerLeft = new IntersectionObserver((entries)=>{
 
 const observerRight = new IntersectionObserver((entries)=>{
     entries.forEach((entry)=>{
-        console.log(entry)
         if(entry.isIntersecting){
             entry.target.classList.add("showRight")
         }
@@ -53,7 +51,6 @@ const observerRight = new IntersectionObserver((entries)=>{
 
 const observerEase = new IntersectionObserver((entries)=>{
     entries.forEach((entry)=>{
-        console.log(entry)
         if(entry.isIntersecting){
             entry.target.classList.add("showEase")
         }

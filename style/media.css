@@ -1,0 +1,75 @@
+/*Media Querys*/
+
+/*Celulares*/
+@media (max-width: 480px){
+    body h2{
+        font-size: 3rem;
+    }
+    /*header*/
+    header img{
+        width: 160px;
+    }
+    header a{
+        font-size: 20px;
+    }
+    /*Main*/
+    .mainContent{
+        margin: 0;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    main h1{
+        font-size: 2.4rem
+    }
+    main p{
+        font-size: 1.3rem;
+        margin-top: 10px;
+    }
+    /*Sobre*/
+    .sobreContainer{
+        justify-content: center;
+        flex-direction: column;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+    .sobreContent{
+        width: 100%;
+        margin: 0;
+    }
+    .sobreContent h2{
+        width: 100%;
+        border-bottom: none;
+        margin-top: 30px;
+    }
+    .sobreContent p{
+        margin-top: 20px;
+    }
+    .sobreImg{
+        width: 80%;
+        margin-top: 30px;
+    }
+    
+
+}
+
+/*Trablets pequenos*/
+@media (min-width: 481px) and (max-width: 768px){
+
+}
+
+/*Tablets*/
+@media(min-width: 769px) and (max-width: 1024px){
+
+}
+
+/*Tablets grandes e netbooks*/
+@media (min-width: 1025px) and (max-width: 1200px){
+
+}
+
+/*Desktops e notebooks*/
+@media (min-width: 1201px){
+
+}

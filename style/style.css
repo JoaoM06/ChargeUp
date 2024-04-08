@@ -6,8 +6,11 @@
     box-sizing: border-box;
 }
 
-.bodyContainer{
-    position: relative;
+body h2{
+    color: black;
+    font-family: "Oswald", sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800;
 }
 
 .imageContainer{
@@ -87,6 +90,28 @@ header a{
     to{opacity: 100%;}
 }
 
+.showLeft{
+    animation: fadeInRight;
+    animation-duration: 1.5s;
+    position: relative;
+    right: 120vw;
+    animation-fill-mode: forwards;
+    animation-delay: 100ms;
+}
+
+.showRight{
+    animation: fadeInLeft;
+    animation-duration: 1.5s;
+    position: relative;
+    left: 120vw;
+    animation-fill-mode: forwards;
+    animation-delay: 100ms;
+}
+
+.showEase{
+    animation: easeAnim 2s;
+}
+
 main{
     display: flex;
     align-items: center;
@@ -113,10 +138,11 @@ main h1{
     animation-fill-mode: forwards;
 }
 
-main h2{
+main p{
     color: rgb(172, 172, 172);
     font-family: "Roboto", sans-serif;
     font-size: 1.5rem;
+    font-weight: 600;
     animation: fadeInRight;
     animation-duration: 1s;
     position: relative;
@@ -160,34 +186,7 @@ main h2{
     margin-right: 30px;
 }
 
-.showLeft{
-    animation: fadeInRight;
-    animation-duration: 1.5s;
-    position: relative;
-    right: 120vw;
-    animation-fill-mode: forwards;
-    animation-delay: 100ms;
-}
-
-.showRight{
-    animation: fadeInLeft;
-    animation-duration: 1.5s;
-    position: relative;
-    left: 120vw;
-    animation-fill-mode: forwards;
-    animation-delay: 100ms;
-}
-
-.showEase{
-    animation: easeAnim 2s;
-}
-
-
 .sobreContent h2{
-    color: black;
-    font-family: "Oswald", sans-serif;
-    font-size: 4rem;
-    font-weight: 800;
     border-bottom: solid 3px black;
     width: fit-content;
 }
@@ -222,10 +221,6 @@ main h2{
 }
 
 .metasContainer h2{
-    color: black;
-    font-family: "Oswald", sans-serif;
-    font-size: 4rem;
-    font-weight: 800;
     border-bottom: solid 3px black;
     width: fit-content;
 }
@@ -277,4 +272,10 @@ main h2{
     flex-direction: row-reverse;
     justify-content: space-evenly;
     margin-top: 60px;
+}
+
+.maisInfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
