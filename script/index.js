@@ -20,7 +20,7 @@ document.addEventListener("scroll", ()=>{
     }
 })
 
-//Animação
+//Animações
 const sobreContent = document.querySelector(".sobreContent")
 const metaLeftContainer = document.querySelectorAll(".metaLeftContainer")
 const metaRightContainer = document.querySelectorAll(".metaRightContainer")

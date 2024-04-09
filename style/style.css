@@ -278,4 +278,43 @@ main p{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+
+.infoContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 60px;
+}
+
+.infoText{
+    width: 40%;
+}
+
+.infoGrafic{
+    width: 40%;
+}
+
+.infoGrafic img{
+    width: 550px;
+}
+
+.infoText p{
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(131, 131, 131);
+}
+
+.infoContainerReverse{
+    flex-direction: row-reverse;
+}
+
+.maisInfo h3{
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(131, 131, 131);
+    margin-top: 60px;
 }
