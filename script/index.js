@@ -66,3 +66,7 @@ const hiddenElementsEase = document.querySelectorAll(".hiddenEase")
 hiddenElementsLeft.forEach((el)=> observerLeft.observe(el))
 hiddenElementsRight.forEach((el)=> observerRight.observe(el))
 hiddenElementsEase.forEach((el)=> observerEase.observe(el))
+
+function scrlTop(){
+    page.scrollTop = 0
+}

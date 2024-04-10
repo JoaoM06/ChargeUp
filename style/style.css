@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body h2{
@@ -342,4 +343,38 @@ main p{
 
 .sustContainer h2{
     margin-bottom: 60px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 20vh;
+    background-color: #DFF7E5;
+    margin-top: 60px;
+}
+
+footer img{
+    width: 250px;
+}
+
+footer a{
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(131, 131, 131);
+}
+
+footer i{
+    background-color: #216027;
+    padding: 0.8em;
+    border-radius: 50%;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+footer i:hover{
+    transform: rotate(360deg)
 }
