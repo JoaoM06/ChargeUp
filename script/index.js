@@ -70,3 +70,11 @@ hiddenElementsEase.forEach((el)=> observerEase.observe(el))
 function scrlTop(){
     page.scrollTop = 0
 }
+
+
+const contato = document.querySelector(".contato").offsetHeight
+
+function contact(){
+    console.log(contato)
+    page.scrollTop = page.offsetHeight - contato - 100
+}

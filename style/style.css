@@ -41,8 +41,7 @@ header{
     z-index: 999;
 }
 
-.newHeader a{
-    text-decoration: none;
+.newHeader button{
     color: white;
     background-color: #216027;
     padding: .55em 1em;
@@ -51,6 +50,8 @@ header{
     font-weight: 600;
     font-family: "Roboto", sans-serif;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    border: none;
+    cursor: pointer;
 }
 
 header img{
@@ -61,8 +62,7 @@ header img{
     display: none;
 }
 
-header a{
-    text-decoration: none;
+header button{
     color: black;
     background-color: white;
     padding: .55em 1em;
@@ -71,6 +71,8 @@ header a{
     font-weight: 600;
     font-family: "Roboto", sans-serif;
     box-shadow: 3px 3px 40px #ffdd028a;
+    border: none;
+    cursor: pointer;
 }
 
 @keyframes fadeInRight {
@@ -152,7 +154,7 @@ main p{
     animation-delay: 100ms;
 }
 
-.mainContent a{
+.mainContent button{
     text-decoration: none;
     color: white;
     background-color: #216027;
@@ -172,6 +174,7 @@ main p{
     right: 120vw;
     animation-fill-mode: forwards;
     animation-delay: 200ms;
+    border: none;
 }
 
 .sobreContainer{    
@@ -377,4 +380,73 @@ footer i{
 
 footer i:hover{
     transform: rotate(360deg)
+}
+
+.contato{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+    margin-top: 80px;
+    padding-bottom: 40px;
+    padding-top: 50px;
+    box-shadow: 20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+    border-radius: 15px;
+}
+
+.formContainer h3{
+    font-family: "Oswald", sans-serif;
+    font-size: 32px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+    align-items: center;
+}
+
+form input, textarea{
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    outline: none;
+    border-radius: 10px;
+    resize: none;
+    border: solid 2px black;
+}
+
+form textarea{
+    height: 120px;
+}
+
+form button{
+    width: 30%;
+    padding: .55em 1em;
+    border-radius: 5px;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    background-color: #216027;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.asideForm{
+    display: flex;
+}
+
+.asideForm img{
+    width: 500px;
 }

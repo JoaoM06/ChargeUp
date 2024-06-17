@@ -14,14 +14,14 @@
         <header>
             <img id="logoWhite" src="imgs/Logo-ChargeUp-fit-branco.png" alt="Logo ChargeUp">
             <img id="logoBlack" class="noDisplay" src="imgs/Logo ChargeUp Fit.png" alt="Logo ChargeUp">
-            <a href="#">Contato</a>
+            <button onclick="contact()">Contato</button>
         </header>
         
         <main>
             <article class="mainContent">
                 <h1>Baterias recicladas<br>de Íon-Lítio</h1>
                 <p>A melhor bateria pelo preço mais acessível</p>
-                <a>Torne-se um investidor</a>
+                <button onclick="contact()">Torne-se um investidor</button>
             </article>
         </main>
     </div>
@@ -29,9 +29,14 @@
     <article class="sobreContainer">
         <div class="sobreContent">
             <h2>Sobre o projeto</h2>
-            <p>O principal objetivo da ChargeUp é buscar uma forma sustentável 
-                e responsável para a reinserção das baterias de Íon-Lítio de notebooks descartadas no mercado, 
-                a fim de minimizar os impactos negativos ao meio ambiente, como a emissão de poluentes atmosféricos.
+            <p>
+                O armazenamento de energia é um dos maiores desafios na produção de energia 
+                fotovoltaica. A produção de energia solar depende 
+                das condições climáticas e do ciclo diário, tornando essencial a capacidade 
+                de armazenar o excedente gerado durante o dia para uso noturno e em dias nublados. 
+                Além disso, o alto custo das baterias de armazenamento 
+                complicam ainda mais essa tarefa.<br>
+                É ai que a ChargeUp entra, trazendo uma solução com uma das baterias mais eficientes do mercado por um custo acessível.
             </p>
         </div>
         <div class="sobreImg">
@@ -131,6 +136,24 @@
             <img class="hiddenLeft" src="imgs/ods.png" alt="">
             <img class="hiddenRight" src="imgs/Environmental audit-bro.png" alt="">
     </article>
+
+    <section class="contato">
+        <div class="formContainer">
+            <h3>Entre em contato e torne-se um investidor</h3>
+            <form action="https://formsubmit.co/joaomigueldacostaaraujo@gmail.com" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+
+                <input type="text" placeholder="Nome:" id="nome" required="true" name="Nome">
+                <input type="email" placeholder="E-mail:" id="email" required="true" name="Mensagem">
+                <input type="tel" placeholder="Telefone:" id="tel" required="true" name="Telefone">
+                <textarea type="" placeholder="Mensagem:" id="msg" name="Mensagem"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <aside class="asideForm">
+            <img src="imgs\Contact us-bro.svg" alt="">
+        </aside>
+    </section>
 
     <footer>
         <img src="imgs/Logo ChargeUp Fit.png" alt="">
