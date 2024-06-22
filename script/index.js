@@ -57,8 +57,6 @@ const observerEase = new IntersectionObserver((entries)=>{
     })
 })
 
-
-
 const hiddenElementsLeft = document.querySelectorAll(".hiddenLeft")
 const hiddenElementsRight = document.querySelectorAll(".hiddenRight")
 const hiddenElementsEase = document.querySelectorAll(".hiddenEase")
